@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [SeleniumDemo]">
+  <parameter name="browserDir" value="C:/Program Files (x86)/Mozilla Firefox/firefox.exe"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="baseURL" value="http://10.10.12.62:2281/pmc/login.do"/>
+  <test name="AuctionWebTest_firefox(failed)">
+    <classes>
+      <class name="com.framework.webdriver.testcase.InitWebdriverTest">
+        <methods>
+          <include name="beforeTestSuite"/>
+          <include name="afterTestSuite"/>
+        </methods>
+      </class> <!-- com.framework.webdriver.testcase.InitWebdriverTest -->
+      <class name="com.test.pmc.testcase.LoginTest">
+        <methods>
+          <include name="beforeClassTest"/>
+          <include name="afterClassTest"/>
+          <include name="testLogout"/>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- com.test.pmc.testcase.LoginTest -->
+    </classes>
+  </test> <!-- AuctionWebTest_firefox(failed) -->
+</suite> <!-- Failed suite [SeleniumDemo] -->
