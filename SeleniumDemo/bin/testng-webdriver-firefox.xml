@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE testNG SYSTEM "./src/testng-1.0.dtd" >
+<!-- thread-count="1" 为同时执行的线程数 parallel="tests" 为同时执行的测试级别，可配置为false,methods，tests，classes，instances -->
+<suite name="SeleniumDemo" thread-count="1" parallel="false">
+	<parameter name="browser" value="firefox"></parameter>
+	<parameter name="browserDir"
+		value="C:/Program Files (x86)/Mozilla Firefox/firefox.exe"></parameter>
+	<parameter name="baseURL" value="http://10.10.12.62:2281/pmc/login.do">
+	</parameter>
+
+	<test name="AuctionWebTest_firefox">
+		<classes>
+			<!-- 同一级别的测试执行会按照class配置的先后顺序执行 -->
+			<!-- 非同一级别的测试仍按照testNG的优先级执行，Suite > Class > Test -->
+			<class name="com.framework.webdriver.testcase.InitWebdriverTest"></class>
+			<class name="com.test.pmc.testcase.LoginTest"></class>
+		</classes>
+	</test>
+</suite>

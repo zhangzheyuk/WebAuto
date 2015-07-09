@@ -8,6 +8,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.Sleeper;
 
+
 public class Login {
 
 	public static String IE_DRIVER_PATH = "res/bin/IEDriverServer.exe";

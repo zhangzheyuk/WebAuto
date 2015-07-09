@@ -1,1 +1,13 @@
+/FrameWork.properties
+/SqlMapConfig.xml
+/beanfactory.xml
+/db.properties
+/db_mysql.properties
+/db_oracle.properties
+/jdbc.properties
+/jdbc_access.properties
+/jdbc_selenium.properties
+/sql-map-config-2.dtd
 /com
+/testPATH.class
+/config

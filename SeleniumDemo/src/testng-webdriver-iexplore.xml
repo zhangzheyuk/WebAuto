@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE testNG SYSTEM "./testng-1.0.dtd" >
+<!-- thread-count="1" 为同时执行的线程数 parallel="tests" 为同时执行的测试级别，可配置为false,methods，tests，classes，instances -->
+<suite name="AuctionWebTest" thread-count="1" parallel="false">
+	<parameter name="browser" value="iexplore"></parameter>
+	<parameter name="browserDir"
+		value="C:/Program Files (x86)/Internet Explorer/iexplore.exe"></parameter>
+	<parameter name="baseURL" value="http://127.0.0.1:8080/auction">
+	</parameter>
+
+	<test name="AuctionWebTest_iexplore">
+		<classes>
+			<!-- 同一级别的测试执行会按照class配置的先后顺序执行 -->
+			<!-- 非同一级别的测试仍按照testNG的优先级执行，Suite > Class > Test -->
+			<class name="com.framework.webdriver.testcase.InitWebdriverTest"></class>
+			<class name="com.auction.testcase.LogonTest"></class>
+			<class name="com.auction.testcase.ManageKindTest"></class>
+		</classes>
+	</test>
+</suite>

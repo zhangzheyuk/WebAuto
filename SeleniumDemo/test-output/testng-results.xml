@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="SeleniumDemo" duration-ms="4657" started-at="2015-07-09T01:06:37Z" finished-at="2015-07-09T01:06:42Z">
+    <groups>
+      <group name="LoginTest">
+        <method signature="LoginTest.testLogin()[pri:0, instance:com.test.pmc.testcase.LoginTest@c60971]" name="testLogin" class="com.test.pmc.testcase.LoginTest"/>
+        <method signature="LoginTest.testLogout()[pri:0, instance:com.test.pmc.testcase.LoginTest@c60971]" name="testLogout" class="com.test.pmc.testcase.LoginTest"/>
+      </group> <!-- LoginTest -->
+    </groups>
+    <test name="AuctionWebTest_firefox" duration-ms="4657" started-at="2015-07-09T01:06:37Z" finished-at="2015-07-09T01:06:42Z">
+      <class name="com.framework.webdriver.testcase.InitWebdriverTest">
+        <test-method status="PASS" signature="beforeTestSuite(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.framework.webdriver.testcase.InitWebdriverTest@178802]" name="beforeTestSuite" is-config="true" duration-ms="22517" started-at="2015-07-09T09:06:14Z" finished-at="2015-07-09T09:06:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[C:/Program Files (x86)/Mozilla Firefox/firefox.exe]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://10.10.12.62:2281/pmc/login.do]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestSuite -->
+        <test-method status="PASS" signature="afterTestSuite()[pri:0, instance:com.framework.webdriver.testcase.InitWebdriverTest@178802]" name="afterTestSuite" is-config="true" duration-ms="1165" started-at="2015-07-09T09:06:42Z" finished-at="2015-07-09T09:06:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestSuite -->
+      </class> <!-- com.framework.webdriver.testcase.InitWebdriverTest -->
+      <class name="com.test.pmc.testcase.LoginTest">
+        <test-method status="PASS" signature="beforeClassTest()[pri:0, instance:com.test.pmc.testcase.LoginTest@c60971]" name="beforeClassTest" is-config="true" duration-ms="7" started-at="2015-07-09T09:06:37Z" finished-at="2015-07-09T09:06:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClassTest -->
+        <test-method status="PASS" signature="testLogin()[pri:0, instance:com.test.pmc.testcase.LoginTest@c60971]" name="testLogin" duration-ms="4324" started-at="2015-07-09T09:06:37Z" finished-at="2015-07-09T09:06:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="testLogout()[pri:0, instance:com.test.pmc.testcase.LoginTest@c60971]" name="testLogout" duration-ms="319" started-at="2015-07-09T09:06:41Z" depends-on-methods="com.test.pmc.testcase.LoginTest.testLogin" finished-at="2015-07-09T09:06:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogout -->
+        <test-method status="PASS" signature="afterClassTest()[pri:0, instance:com.test.pmc.testcase.LoginTest@c60971]" name="afterClassTest" is-config="true" duration-ms="0" started-at="2015-07-09T09:06:42Z" finished-at="2015-07-09T09:06:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClassTest -->
+      </class> <!-- com.test.pmc.testcase.LoginTest -->
+    </test> <!-- AuctionWebTest_firefox -->
+  </suite> <!-- SeleniumDemo -->
+</testng-results>
